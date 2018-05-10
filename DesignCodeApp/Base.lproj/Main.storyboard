@@ -94,30 +94,36 @@
             </objects>
             <point key="canvasLocation" x="140" y="877"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="zAp-DY-3V9">
+        <!--Table View Controller-->
+        <scene sceneID="Xid-bz-r0G">
             <objects>
-                <viewController id="FH4-hs-HYW" customClass="ViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BFA-6K-hV8">
+                <tableViewController id="s3f-Xg-N44" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zsQ-SF-K87">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Article Screen" translatesAutoresizingMaskIntoConstraints="NO" id="b1U-fg-vSy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1503"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5X-uw-kLL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="tzr-wC-Mal"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d8t-hH-tU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Article Screen" id="ztb-sf-V2k">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1503"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="CW5-9g-fZx" appends="YES" id="UR1-bI-nuE"/>
+                            </connections>
+                        </imageView>
+                        <connections>
+                            <outlet property="dataSource" destination="s3f-Xg-N44" id="zQl-e7-dxK"/>
+                            <outlet property="delegate" destination="s3f-Xg-N44" id="P6i-vG-hQP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJh-y0-Gug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="CW5-9g-fZx">
+                    <connections>
+                        <segue destination="C3F-sU-r55" kind="presentation" modalTransitionStyle="crossDissolve" id="iru-0Y-Aaz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1682" y="133"/>
+            <point key="canvasLocation" x="1681" y="133"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="i0Y-G5-vXW">
@@ -136,6 +142,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="m2g-ef-qCR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62m-Iv-fWh">
+                                <rect key="frame" x="20" y="255" width="304" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="s3f-Xg-N44" kind="presentation" modalTransitionStyle="crossDissolve" id="ECG-GQ-OUy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -205,6 +218,7 @@
         <image name="More Screen" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qB1-da-QVK"/>
+        <segue reference="m2g-ef-qCR"/>
+        <segue reference="iru-0Y-Aaz"/>
     </inferredMetricsTieBreakers>
 </document>
