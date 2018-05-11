@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC155AE420A575350096C4FC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC155AE320A575350096C4FC /* StartViewController.swift */; };
 		FC7568CD20A2EFCE00CD18FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7568CC20A2EFCE00CD18FC /* AppDelegate.swift */; };
 		FC7568CF20A2EFCE00CD18FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7568CE20A2EFCE00CD18FC /* ViewController.swift */; };
 		FC7568D220A2EFCE00CD18FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7568D020A2EFCE00CD18FC /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC155AE320A575350096C4FC /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FC7568C920A2EFCE00CD18FC /* DesignCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7568CC20A2EFCE00CD18FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC7568CE20A2EFCE00CD18FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				FC7568DB20A2EFCF00CD18FC /* Info.plist */,
 				FC7568D320A2EFCE00CD18FC /* DesignCodeApp.xcdatamodeld */,
 				FC9F251920A56A0B00693CA2 /* Start.storyboard */,
+				FC155AE320A575350096C4FC /* StartViewController.swift */,
 			);
 			path = DesignCodeApp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC7568CF20A2EFCE00CD18FC /* ViewController.swift in Sources */,
+				FC155AE420A575350096C4FC /* StartViewController.swift in Sources */,
 				FC7568CD20A2EFCE00CD18FC /* AppDelegate.swift in Sources */,
 				FC7568D520A2EFCE00CD18FC /* DesignCodeApp.xcdatamodeld in Sources */,
 			);
