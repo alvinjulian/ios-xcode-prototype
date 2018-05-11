@@ -13,6 +13,7 @@
 		FC7568D520A2EFCE00CD18FC /* DesignCodeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC7568D320A2EFCE00CD18FC /* DesignCodeApp.xcdatamodeld */; };
 		FC7568D720A2EFCF00CD18FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7568D620A2EFCF00CD18FC /* Assets.xcassets */; };
 		FC7568DA20A2EFCF00CD18FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7568D820A2EFCF00CD18FC /* LaunchScreen.storyboard */; };
+		FC9F251A20A56A0B00693CA2 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9F251920A56A0B00693CA2 /* Start.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FC7568D620A2EFCF00CD18FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC7568D920A2EFCF00CD18FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC7568DB20A2EFCF00CD18FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC9F251920A56A0B00693CA2 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FC7568D820A2EFCF00CD18FC /* LaunchScreen.storyboard */,
 				FC7568DB20A2EFCF00CD18FC /* Info.plist */,
 				FC7568D320A2EFCE00CD18FC /* DesignCodeApp.xcdatamodeld */,
+				FC9F251920A56A0B00693CA2 /* Start.storyboard */,
 			);
 			path = DesignCodeApp;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC7568DA20A2EFCF00CD18FC /* LaunchScreen.storyboard in Resources */,
+				FC9F251A20A56A0B00693CA2 /* Start.storyboard in Resources */,
 				FC7568D720A2EFCF00CD18FC /* Assets.xcassets in Resources */,
 				FC7568D220A2EFCE00CD18FC /* Main.storyboard in Resources */,
 			);
