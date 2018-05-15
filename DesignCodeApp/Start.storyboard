@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="Wf3-Lt-VJP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mnB-Tc-OOH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9P-sI-CdF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kao-OI-koD" userLabel="Hero View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
@@ -269,7 +269,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For beginners and designers." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfM-mb-3br">
-                                                <rect key="frame" x="46" y="272.66666666666663" width="283.66666666666669" height="53"/>
+                                                <rect key="frame" x="46.333333333333343" y="272.66666666666663" width="283.66666666666663" height="52.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -287,11 +287,42 @@
                                             <constraint firstItem="6a8-ic-ZNS" firstAttribute="top" secondItem="uFF-vV-3fU" secondAttribute="top" constant="50" id="oea-Vn-wg1"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svi-w7-Zl0" userLabel="Chapter View">
+                                        <rect key="frame" x="0.0" y="800" width="375" height="380"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 1: 12 SECTIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqK-6M-2Al">
+                                                <rect key="frame" x="20" y="50" width="335" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALg-FN-ISn">
+                                                <rect key="frame" x="20" y="82" width="304" height="248"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="248" id="QbM-Bz-c0H"/>
+                                                    <constraint firstAttribute="width" constant="304" id="vf2-PE-tXC"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ALg-FN-ISn" secondAttribute="bottom" constant="50" id="29y-XI-yZr"/>
+                                            <constraint firstItem="vqK-6M-2Al" firstAttribute="top" secondItem="svi-w7-Zl0" secondAttribute="top" constant="50" id="5yD-3C-CMu"/>
+                                            <constraint firstItem="ALg-FN-ISn" firstAttribute="leading" secondItem="svi-w7-Zl0" secondAttribute="leading" constant="20" id="Cme-Le-eIe"/>
+                                            <constraint firstItem="vqK-6M-2Al" firstAttribute="leading" secondItem="svi-w7-Zl0" secondAttribute="leading" constant="20" id="IiJ-Ff-h0W"/>
+                                            <constraint firstAttribute="height" constant="380" id="UpZ-Rq-mFu"/>
+                                            <constraint firstAttribute="trailing" secondItem="vqK-6M-2Al" secondAttribute="trailing" constant="20" id="cQ8-mL-idR"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="svi-w7-Zl0" firstAttribute="top" secondItem="uFF-vV-3fU" secondAttribute="bottom" id="6pi-5s-PEc"/>
+                                    <constraint firstItem="svi-w7-Zl0" firstAttribute="leading" secondItem="a9P-sI-CdF" secondAttribute="leading" id="MuV-RZ-OPf"/>
                                     <constraint firstItem="uFF-vV-3fU" firstAttribute="top" secondItem="a9P-sI-CdF" secondAttribute="top" constant="452" id="N7I-UV-5qk"/>
+                                    <constraint firstAttribute="bottom" secondItem="svi-w7-Zl0" secondAttribute="bottom" constant="820" id="PCA-W9-kgi"/>
                                     <constraint firstItem="uFF-vV-3fU" firstAttribute="trailing" secondItem="kao-OI-koD" secondAttribute="trailing" id="Qkc-yb-Gdt"/>
-                                    <constraint firstAttribute="bottom" secondItem="uFF-vV-3fU" secondAttribute="bottom" constant="12" id="ceO-m6-O7z"/>
+                                    <constraint firstAttribute="trailing" secondItem="svi-w7-Zl0" secondAttribute="trailing" id="dfd-CL-2zp"/>
                                     <constraint firstItem="uFF-vV-3fU" firstAttribute="leading" secondItem="kao-OI-koD" secondAttribute="leading" id="g4p-m4-bFg"/>
                                     <constraint firstItem="uFF-vV-3fU" firstAttribute="top" secondItem="kao-OI-koD" secondAttribute="bottom" id="mLe-X9-HaY"/>
                                     <constraint firstAttribute="trailing" secondItem="uFF-vV-3fU" secondAttribute="trailing" id="t7F-Fe-13h"/>
@@ -309,6 +340,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JSC-Eb-X65"/>
                     </view>
+                    <size key="freeformSize" width="375" height="2000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moj-mL-qgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
