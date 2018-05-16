@@ -295,21 +295,21 @@
                                                 <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cKL-hf-Vj6">
+                                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cKL-hf-Vj6">
                                                 <rect key="frame" x="0.0" y="82" width="375" height="248"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="248" id="0pK-tE-Ysh"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PGY-8f-qeP">
-                                                    <size key="itemSize" width="50" height="50"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="PGY-8f-qeP">
+                                                    <size key="itemSize" width="304" height="248"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b3N-HH-H5Q">
-                                                        <rect key="frame" x="35.666666666666664" y="0.0" width="304" height="248"/>
+                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="b3N-HH-H5Q">
+                                                        <rect key="frame" x="20" y="0.0" width="304" height="248"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
@@ -434,6 +434,7 @@
                     <connections>
                         <outlet property="backgroundImageView" destination="Vzn-Xk-inU" id="eCG-N5-q4y"/>
                         <outlet property="bookView" destination="svi-w7-Zl0" id="vts-a0-IJX"/>
+                        <outlet property="chapterCollectionView" destination="cKL-hf-Vj6" id="Uwv-Ug-EnD"/>
                         <outlet property="deviceImageView" destination="sLA-UC-flS" id="oB4-fS-h8D"/>
                         <outlet property="heroView" destination="kao-OI-koD" id="4QF-n2-hxr"/>
                         <outlet property="playVisualView" destination="ZRJ-GM-o46" id="B7A-UL-Sul"/>
