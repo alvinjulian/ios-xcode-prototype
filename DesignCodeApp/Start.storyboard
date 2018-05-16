@@ -21,11 +21,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="a9P-sI-CdF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kao-OI-koD" userLabel="Hero View">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kao-OI-koD" userLabel="Hero View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="Vzn-Xk-inU">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                                                <rect key="frame" x="0.0" y="-50" width="375" height="502"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to design &amp; code for iOS 11" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmv-kW-cW0">
                                                 <rect key="frame" x="38" y="106" width="160" height="172"/>
@@ -235,7 +235,7 @@
                                             <constraint firstItem="lmv-kW-cW0" firstAttribute="centerX" secondItem="kao-OI-koD" secondAttribute="centerX" constant="-70" id="d44-vC-Lot"/>
                                             <constraint firstItem="lmv-kW-cW0" firstAttribute="centerY" secondItem="kao-OI-koD" secondAttribute="centerY" constant="-34" id="fkB-FC-klq"/>
                                             <constraint firstItem="sLA-UC-flS" firstAttribute="leading" secondItem="lmv-kW-cW0" secondAttribute="trailing" constant="4" id="hcT-Yw-sVr"/>
-                                            <constraint firstItem="Vzn-Xk-inU" firstAttribute="top" secondItem="kao-OI-koD" secondAttribute="top" id="huc-ob-peW"/>
+                                            <constraint firstItem="Vzn-Xk-inU" firstAttribute="top" secondItem="kao-OI-koD" secondAttribute="top" constant="-50" id="huc-ob-peW"/>
                                             <constraint firstItem="sLA-UC-flS" firstAttribute="centerY" secondItem="lmv-kW-cW0" secondAttribute="centerY" constant="12.5" id="s2g-MB-ltI"/>
                                             <constraint firstItem="Vzn-Xk-inU" firstAttribute="leading" secondItem="kao-OI-koD" secondAttribute="leading" id="yIZ-ED-e05"/>
                                             <constraint firstItem="ZRJ-GM-o46" firstAttribute="centerX" secondItem="sLA-UC-flS" secondAttribute="centerX" constant="-4.5" id="yiu-xB-q0w"/>
@@ -342,8 +342,12 @@
                     </view>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="Vzn-Xk-inU" id="eCG-N5-q4y"/>
+                        <outlet property="bookView" destination="svi-w7-Zl0" id="vts-a0-IJX"/>
                         <outlet property="deviceImageView" destination="sLA-UC-flS" id="oB4-fS-h8D"/>
+                        <outlet property="heroView" destination="kao-OI-koD" id="4QF-n2-hxr"/>
                         <outlet property="playVisualView" destination="ZRJ-GM-o46" id="B7A-UL-Sul"/>
+                        <outlet property="scrollView" destination="a9P-sI-CdF" id="9xB-Lh-47U"/>
                         <outlet property="titleLabel" destination="lmv-kW-cW0" id="yZg-HW-ZGk"/>
                     </connections>
                 </viewController>
