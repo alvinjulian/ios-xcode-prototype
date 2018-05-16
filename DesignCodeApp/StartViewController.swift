@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import AVKit
 
 class StartViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var deviceImageView: UIImageView!
     @IBOutlet weak var playVisualView: UIVisualEffectView!
+    
+    @IBAction func playButtonTapped(_ sender: Any) {
+        let urlString = "https://player.vimeo.com/external/235468301.hd.mp4?s=e852004d6a46ce569fcf6ef02a7d291ea581358e&profile_id=175"
+        let url = URL(string: urlString)
+        
+        let player = AVPlayer(url: url!)
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        
+        present(playerController, animated: true) {
+            player.play()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

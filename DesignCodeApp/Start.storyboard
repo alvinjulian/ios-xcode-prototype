@@ -50,16 +50,15 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Action-Play-Small" translatesAutoresizingMaskIntoConstraints="NO" id="aVy-mt-nIX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL7-dF-FXp">
+                                                            <rect key="frame" x="14" y="8" width="23" height="35"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" image="Action-Play-Small"/>
+                                                            <connections>
+                                                                <action selector="playButtonTapped:" destination="Wf3-Lt-VJP" eventType="touchUpInside" id="pSW-Lb-2tY"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="aVy-mt-nIX" secondAttribute="bottom" id="A1j-fm-tZD"/>
-                                                        <constraint firstItem="aVy-mt-nIX" firstAttribute="top" secondItem="yn6-sd-lH5" secondAttribute="top" id="JO8-hc-YGz"/>
-                                                        <constraint firstItem="aVy-mt-nIX" firstAttribute="leading" secondItem="yn6-sd-lH5" secondAttribute="leading" id="O5J-4X-0QU"/>
-                                                        <constraint firstAttribute="trailing" secondItem="aVy-mt-nIX" secondAttribute="trailing" id="fJk-yC-oXP"/>
-                                                    </constraints>
                                                 </view>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="pRd-rW-06B"/>
@@ -350,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moj-mL-qgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-172" y="27.436281859070466"/>
+            <point key="canvasLocation" x="-172" y="27.339901477832512"/>
         </scene>
     </scenes>
     <resources>
