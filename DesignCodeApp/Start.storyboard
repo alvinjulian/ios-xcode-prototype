@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="Kp6-vg-oUJ">
             <objects>
-                <viewController id="Wf3-Lt-VJP" sceneMemberID="viewController">
+                <viewController id="Wf3-Lt-VJP" customClass="StartViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mnB-Tc-OOH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,34 @@
                                                     <constraint firstAttribute="width" constant="123" id="rC1-Bu-13n"/>
                                                 </constraints>
                                             </imageView>
+                                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRJ-GM-o46">
+                                                <rect key="frame" x="234" y="168" width="50" height="50"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yn6-sd-lH5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Action-Play-Small" translatesAutoresizingMaskIntoConstraints="NO" id="aVy-mt-nIX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="aVy-mt-nIX" secondAttribute="bottom" id="A1j-fm-tZD"/>
+                                                        <constraint firstItem="aVy-mt-nIX" firstAttribute="top" secondItem="yn6-sd-lH5" secondAttribute="top" id="JO8-hc-YGz"/>
+                                                        <constraint firstItem="aVy-mt-nIX" firstAttribute="leading" secondItem="yn6-sd-lH5" secondAttribute="leading" id="O5J-4X-0QU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="aVy-mt-nIX" secondAttribute="trailing" id="fJk-yC-oXP"/>
+                                                    </constraints>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pRd-rW-06B"/>
+                                                    <constraint firstAttribute="width" constant="50" id="wfd-HA-ZA6"/>
+                                                </constraints>
+                                                <blurEffect style="dark"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </visualEffectView>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgy-u6-HNe">
                                                 <rect key="frame" x="0.0" y="324" width="375" height="128"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lLJ-O5-YhG">
@@ -195,34 +223,6 @@
                                                 </constraints>
                                                 <blurEffect style="dark"/>
                                             </visualEffectView>
-                                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRJ-GM-o46">
-                                                <rect key="frame" x="234" y="168" width="50" height="50"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yn6-sd-lH5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <subviews>
-                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Action-Play-Small" translatesAutoresizingMaskIntoConstraints="NO" id="aVy-mt-nIX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="aVy-mt-nIX" secondAttribute="bottom" id="A1j-fm-tZD"/>
-                                                        <constraint firstItem="aVy-mt-nIX" firstAttribute="top" secondItem="yn6-sd-lH5" secondAttribute="top" id="JO8-hc-YGz"/>
-                                                        <constraint firstItem="aVy-mt-nIX" firstAttribute="leading" secondItem="yn6-sd-lH5" secondAttribute="leading" id="O5J-4X-0QU"/>
-                                                        <constraint firstAttribute="trailing" secondItem="aVy-mt-nIX" secondAttribute="trailing" id="fJk-yC-oXP"/>
-                                                    </constraints>
-                                                </view>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="pRd-rW-06B"/>
-                                                    <constraint firstAttribute="width" constant="50" id="wfd-HA-ZA6"/>
-                                                </constraints>
-                                                <blurEffect style="dark"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="25"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </visualEffectView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -342,6 +342,11 @@
                         <viewLayoutGuide key="safeArea" id="JSC-Eb-X65"/>
                     </view>
                     <size key="freeformSize" width="375" height="2000"/>
+                    <connections>
+                        <outlet property="deviceImageView" destination="sLA-UC-flS" id="oB4-fS-h8D"/>
+                        <outlet property="playVisualView" destination="ZRJ-GM-o46" id="B7A-UL-Sul"/>
+                        <outlet property="titleLabel" destination="lmv-kW-cW0" id="yZg-HW-ZGk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moj-mL-qgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
