@@ -81,6 +81,21 @@ extension StartViewController: UIScrollViewDelegate {
                 transform.m34 = -1.0 / 1000
                 let rotation = CATransform3DRotate(transform, angle, 0, 1, 0)
                 cell.layer.transform = rotation
+                
+                var scaleFromX = (1000 - (cellFrame.origin.x - 200)) / 1000
+                let scaleMax: CGFloat = 1.0
+                let scaleMin: CGFloat = 0.6
+                
+                if scaleFromX > scaleMax {
+                    scaleFromX = scaleMax
+                }
+                
+                if scaleFromX < scaleMin {
+                    scaleFromX = scaleMin
+                }
+                
+                let scale = CATransform3DScale(transform, scaleFromX, scaleFromX, 1)
+                cell.layer.transform = scale
             }
         }
     }
