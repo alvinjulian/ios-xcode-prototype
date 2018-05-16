@@ -72,7 +72,7 @@ extension StartViewController: UIScrollViewDelegate {
                 let attributes = collectionView.layoutAttributesForItem(at: indexPath!)
                 let cellFrame = collectionView.convert((attributes?.frame)!, to: view)
                 
-                let translationX = cellFrame.origin.x / 5
+                let translationX = cellFrame.origin.x / 8
                 cell.coverImageView.transform = CGAffineTransform(translationX: translationX, y: 0)
 
                 let angleFromX = Double(-cellFrame.origin.x / 10)
@@ -80,7 +80,6 @@ extension StartViewController: UIScrollViewDelegate {
                 var transform = CATransform3DIdentity
                 transform.m34 = -1.0 / 1000
                 let rotation = CATransform3DRotate(transform, angle, 0, 1, 0)
-                cell.layer.transform = rotation
                 
                 var scaleFromX = (1000 - (cellFrame.origin.x - 200)) / 1000
                 let scaleMax: CGFloat = 1.0
@@ -95,7 +94,8 @@ extension StartViewController: UIScrollViewDelegate {
                 }
                 
                 let scale = CATransform3DScale(transform, scaleFromX, scaleFromX, 1)
-                cell.layer.transform = scale
+                
+                cell.layer.transform = CATransform3DConcat(rotation, scale)
             }
         }
     }
