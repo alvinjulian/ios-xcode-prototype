@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IwI-hW-ba7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w0P-Ag-aDq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,13 +37,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Art-iPhoneX" translatesAutoresizingMaskIntoConstraints="NO" id="sLA-UC-flS">
-                                                <rect key="frame" x="202" y="45" width="123" height="319"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="319" id="V1m-TO-yYa"/>
-                                                    <constraint firstAttribute="width" constant="123" id="rC1-Bu-13n"/>
-                                                </constraints>
-                                            </imageView>
                                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRJ-GM-o46">
                                                 <rect key="frame" x="234" y="168" width="50" height="50"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yn6-sd-lH5">
@@ -222,6 +215,13 @@
                                                 </constraints>
                                                 <blurEffect style="dark"/>
                                             </visualEffectView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="Art-iPhoneX" translatesAutoresizingMaskIntoConstraints="NO" id="sLA-UC-flS">
+                                                <rect key="frame" x="198" y="42" width="123" height="319"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="319" id="V1m-TO-yYa"/>
+                                                    <constraint firstAttribute="width" constant="123" id="rC1-Bu-13n"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -463,7 +463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moj-mL-qgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="26"/>
+            <point key="canvasLocation" x="1759.2" y="25.187406296851577"/>
         </scene>
         <!--Section View Controller-->
         <scene sceneID="afC-Uk-8fz">
@@ -619,7 +619,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvg-9d-WYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="-573.46326836581716"/>
+            <point key="canvasLocation" x="2532" y="-573.46326836581716"/>
         </scene>
         <!--Testimonial View Controller-->
         <scene sceneID="J0x-dz-4qD">
@@ -825,25 +825,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRK-dv-Kkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="26.986506746626688"/>
+            <point key="canvasLocation" x="2532" y="26.986506746626688"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="cbn-hI-7x9">
+        <scene sceneID="AO9-nL-aSm">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IwI-hW-ba7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w0P-Ag-aDq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dh7-cX-kLM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iHI-hM-dXS">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Wf3-Lt-VJP" kind="relationship" relationship="rootViewController" id="4HT-Qh-QkX"/>
+                        <segue destination="Wf3-Lt-VJP" kind="relationship" relationship="rootViewController" id="kWO-fI-Yxj"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b1N-eC-HcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pT9-na-VXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="-573"/>
+            <point key="canvasLocation" x="977" y="-573"/>
         </scene>
     </scenes>
     <resources>

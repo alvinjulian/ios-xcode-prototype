@@ -57,8 +57,25 @@ class StartViewController: UIViewController {
         setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        isStatusBarHidden = false
+        UIView.animate(withDuration: 0.5, animations: {
+            self.setNeedsStatusBarAppearanceUpdate()
+        })
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return isStatusBarHidden
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -70,6 +87,11 @@ class StartViewController: UIViewController {
             toViewController.section = section
             toViewController.sections = sections
             toViewController.indexPath = indexPath
+            
+            isStatusBarHidden = true
+            UIView.animate(withDuration: 0.5, animations: {
+                self.setNeedsStatusBarAppearanceUpdate()
+            })
         }
     }
     
@@ -77,7 +99,7 @@ class StartViewController: UIViewController {
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
         let blur = UIBlurEffect(style: .dark)
         let blurStatusBar = UIVisualEffectView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: statusBarHeight))
-        
+
         blurStatusBar.effect = blur
         view.addSubview(blurStatusBar)
     }
