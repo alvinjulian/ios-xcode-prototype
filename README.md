@@ -24,3 +24,4 @@ Perhatikan sisi kiri layar, tidak mengenai notch dari iPhone X, karena sudah men
 
 ## Preview aplikasi dengan animasi rotate dan scale di Collection View Cell
 <img src="https://github.com/omrobbie/ios-xcode-prototype/blob/master/screenshot/preview10.gif" width="512"/>&nbsp;
+<img src="https://github.com/omrobbie/ios-xcode-prototype/blob/master/screenshot/preview11.gif" width="256"/>&nbsp;
