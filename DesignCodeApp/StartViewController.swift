@@ -66,6 +66,17 @@ class StartViewController: UIViewController {
             toViewController.sections = sections
             toViewController.indexPath = indexPath
         }
+        
+        addBlurStatusBar()
+    }
+    
+    func addBlurStatusBar() {
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        let blur = UIBlurEffect(style: .dark)
+        let blurStatusBar = UIVisualEffectView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: statusBarHeight))
+        
+        blurStatusBar.effect = blur
+        view.addSubview(blurStatusBar)
     }
 
 }
