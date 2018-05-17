@@ -52,6 +52,18 @@ class StartViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeToSection" {
+            let toViewController = segue.destination as! SectionViewController
+            let indexPath = sender as! IndexPath
+            let section = sections[indexPath.row]
+            
+            toViewController.section = section
+            toViewController.sections = sections
+            toViewController.indexPath = indexPath
+        }
+    }
+    
 }
 
 extension StartViewController: UIScrollViewDelegate {
@@ -121,5 +133,9 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.layer.transform = animateCell(cellFrame: cell.frame)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "HomeToSection", sender: indexPath)
     }
 }
