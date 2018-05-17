@@ -20,6 +20,8 @@ class StartViewController: UIViewController {
     @IBOutlet weak var bookView: UIView!
     @IBOutlet weak var chapterCollectionView: UICollectionView!
     
+    var isStatusBarHidden = false
+    
     @IBAction func playButtonTapped(_ sender: Any) {
         let urlString = "https://player.vimeo.com/external/235468301.hd.mp4?s=e852004d6a46ce569fcf6ef02a7d291ea581358e&profile_id=175"
         let url = URL(string: urlString)
@@ -50,10 +52,13 @@ class StartViewController: UIViewController {
             self.deviceImageView.alpha = 1
             self.playVisualView.alpha = 1
         }
+
+        addBlurStatusBar()
+        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+        return .lightContent
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -66,8 +71,6 @@ class StartViewController: UIViewController {
             toViewController.sections = sections
             toViewController.indexPath = indexPath
         }
-        
-        addBlurStatusBar()
     }
     
     func addBlurStatusBar() {
@@ -77,6 +80,11 @@ class StartViewController: UIViewController {
         
         blurStatusBar.effect = blur
         view.addSubview(blurStatusBar)
+    }
+    
+    func setStatusBarBackgroundColor(color: UIColor) {
+        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else { return }
+        statusBar.backgroundColor = color
     }
 
 }
