@@ -51,7 +51,7 @@ class StartViewController: UIViewController {
             self.playVisualView.alpha = 1
         }
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeToSection" {
             let toViewController = segue.destination as! SectionViewController
