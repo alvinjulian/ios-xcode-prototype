@@ -51,6 +51,10 @@ class StartViewController: UIViewController {
             self.playVisualView.alpha = 1
         }
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeToSection" {
@@ -63,7 +67,7 @@ class StartViewController: UIViewController {
             toViewController.indexPath = indexPath
         }
     }
-    
+
 }
 
 extension StartViewController: UIScrollViewDelegate {
