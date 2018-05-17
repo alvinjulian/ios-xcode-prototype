@@ -589,12 +589,60 @@
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jbt-ry-ttP">
+                                        <rect key="frame" x="76.666666666666686" y="335" width="222" height="73.666666666666686"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26.000 people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpr-mh-mFZ">
+                                                <rect key="frame" x="9.6666666666666572" y="0.0" width="203" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="are learning from Design + Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyP-qs-joq">
+                                                <rect key="frame" x="0.0" y="36" width="222" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqt-9W-FC9">
+                                                <rect key="frame" x="1" y="70.666666666666686" width="220.33333333333334" height="3"/>
+                                                <color key="backgroundColor" red="0.68627450980392157" green="0.27843137254901962" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="3" id="I0X-34-Iyb"/>
+                                                    <constraint firstAttribute="width" constant="220" id="kRV-oA-Q5h"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Kwt-9M-FqC">
+                                        <rect key="frame" x="24.333333333333343" y="430" width="326.33333333333326" height="44"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Logo-Google" translatesAutoresizingMaskIntoConstraints="NO" id="CmA-7r-b9v">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Logo-Apple" translatesAutoresizingMaskIntoConstraints="NO" id="s6E-17-qky">
+                                                <rect key="frame" x="150" y="0.0" width="36" height="44"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Logo-Stripe" translatesAutoresizingMaskIntoConstraints="NO" id="IGM-Mc-WaO">
+                                                <rect key="frame" x="245.33333333333337" y="0.0" width="81" height="44"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.19607843137254902" green="0.2196078431372549" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="jbt-ry-ttP" firstAttribute="top" secondItem="gii-XD-92r" secondAttribute="bottom" constant="50" id="0nM-Xp-Rjf"/>
                                     <constraint firstAttribute="trailing" secondItem="gii-XD-92r" secondAttribute="trailing" id="9aD-er-mXO"/>
+                                    <constraint firstItem="Kwt-9M-FqC" firstAttribute="centerX" secondItem="7rR-hF-vbf" secondAttribute="centerX" id="QKx-WD-DTa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kwt-9M-FqC" secondAttribute="bottom" constant="50" id="art-eV-LmJ"/>
                                     <constraint firstItem="gii-XD-92r" firstAttribute="leading" secondItem="7rR-hF-vbf" secondAttribute="leading" id="bR1-N9-lwj"/>
                                     <constraint firstItem="gii-XD-92r" firstAttribute="top" secondItem="7rR-hF-vbf" secondAttribute="top" constant="50" id="dt2-dS-RK6"/>
+                                    <constraint firstItem="jbt-ry-ttP" firstAttribute="centerX" secondItem="7rR-hF-vbf" secondAttribute="centerX" id="sQm-yz-fZa"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -617,6 +665,9 @@
         <image name="Art-Book" width="133" height="150"/>
         <image name="Art-iPhoneX" width="129" height="326"/>
         <image name="Home" width="2880" height="1600"/>
+        <image name="Logo-Apple" width="36" height="44"/>
+        <image name="Logo-Google" width="100" height="37"/>
+        <image name="Logo-Stripe" width="81" height="33"/>
         <image name="Quote-Begin" width="23" height="18"/>
         <image name="Quote-End" width="12" height="9"/>
         <image name="ios11" width="2880" height="1600"/>
