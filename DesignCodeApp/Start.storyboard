@@ -37,6 +37,13 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="Art-iPhoneX" translatesAutoresizingMaskIntoConstraints="NO" id="sLA-UC-flS">
+                                                <rect key="frame" x="198" y="42" width="123" height="319"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="319" id="V1m-TO-yYa"/>
+                                                    <constraint firstAttribute="width" constant="123" id="rC1-Bu-13n"/>
+                                                </constraints>
+                                            </imageView>
                                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRJ-GM-o46">
                                                 <rect key="frame" x="234" y="168" width="50" height="50"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yn6-sd-lH5">
@@ -215,13 +222,6 @@
                                                 </constraints>
                                                 <blurEffect style="dark"/>
                                             </visualEffectView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="Art-iPhoneX" translatesAutoresizingMaskIntoConstraints="NO" id="sLA-UC-flS">
-                                                <rect key="frame" x="198" y="42" width="123" height="319"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="319" id="V1m-TO-yYa"/>
-                                                    <constraint firstAttribute="width" constant="123" id="rC1-Bu-13n"/>
-                                                </constraints>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
