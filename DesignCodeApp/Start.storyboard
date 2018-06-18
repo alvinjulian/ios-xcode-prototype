@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W5R-Qc-gOk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W5R-Qc-gOk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Start View Controller-->
+        <!--Title-->
         <scene sceneID="Kp6-vg-oUJ">
             <objects>
                 <viewController id="Wf3-Lt-VJP" customClass="StartViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,7 +37,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="Art-iPhoneX" translatesAutoresizingMaskIntoConstraints="NO" id="sLA-UC-flS">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Art-iPhoneX" translatesAutoresizingMaskIntoConstraints="NO" id="sLA-UC-flS">
                                                 <rect key="frame" x="198" y="42" width="123" height="319"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="319" id="V1m-TO-yYa"/>
@@ -228,17 +228,17 @@
                                             <constraint firstAttribute="height" constant="452" id="HNE-Af-kNb"/>
                                             <constraint firstAttribute="trailing" secondItem="Vzn-Xk-inU" secondAttribute="trailing" id="LNo-Oy-LkP"/>
                                             <constraint firstAttribute="bottom" secondItem="Vzn-Xk-inU" secondAttribute="bottom" id="OQy-pv-m2v"/>
-                                            <constraint firstItem="ZRJ-GM-o46" firstAttribute="centerY" secondItem="sLA-UC-flS" secondAttribute="centerY" constant="-11.5" id="Qaf-LE-iaC"/>
+                                            <constraint firstItem="ZRJ-GM-o46" firstAttribute="centerY" secondItem="sLA-UC-flS" secondAttribute="centerY" constant="-8.5" id="Qaf-LE-iaC"/>
                                             <constraint firstItem="jgy-u6-HNe" firstAttribute="leading" secondItem="kao-OI-koD" secondAttribute="leading" id="Tgo-GT-pNi"/>
                                             <constraint firstAttribute="bottom" secondItem="jgy-u6-HNe" secondAttribute="bottom" id="UcF-Ji-65H"/>
                                             <constraint firstAttribute="trailing" secondItem="jgy-u6-HNe" secondAttribute="trailing" id="VYt-Jq-FcH"/>
                                             <constraint firstItem="lmv-kW-cW0" firstAttribute="centerX" secondItem="kao-OI-koD" secondAttribute="centerX" constant="-70" id="d44-vC-Lot"/>
                                             <constraint firstItem="lmv-kW-cW0" firstAttribute="centerY" secondItem="kao-OI-koD" secondAttribute="centerY" constant="-34" id="fkB-FC-klq"/>
-                                            <constraint firstItem="sLA-UC-flS" firstAttribute="leading" secondItem="lmv-kW-cW0" secondAttribute="trailing" constant="4" id="hcT-Yw-sVr"/>
+                                            <constraint firstItem="sLA-UC-flS" firstAttribute="leading" secondItem="lmv-kW-cW0" secondAttribute="trailing" id="hcT-Yw-sVr"/>
                                             <constraint firstItem="Vzn-Xk-inU" firstAttribute="top" secondItem="kao-OI-koD" secondAttribute="top" constant="-50" id="huc-ob-peW"/>
-                                            <constraint firstItem="sLA-UC-flS" firstAttribute="centerY" secondItem="lmv-kW-cW0" secondAttribute="centerY" constant="12.5" id="s2g-MB-ltI"/>
+                                            <constraint firstItem="sLA-UC-flS" firstAttribute="centerY" secondItem="lmv-kW-cW0" secondAttribute="centerY" constant="9.5" id="s2g-MB-ltI"/>
                                             <constraint firstItem="Vzn-Xk-inU" firstAttribute="leading" secondItem="kao-OI-koD" secondAttribute="leading" id="yIZ-ED-e05"/>
-                                            <constraint firstItem="ZRJ-GM-o46" firstAttribute="centerX" secondItem="sLA-UC-flS" secondAttribute="centerX" constant="-4.5" id="yiu-xB-q0w"/>
+                                            <constraint firstItem="ZRJ-GM-o46" firstAttribute="centerX" secondItem="sLA-UC-flS" secondAttribute="centerX" constant="-0.5" id="yiu-xB-q0w"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFF-vV-3fU" userLabel="Book View">
@@ -447,7 +447,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JSC-Eb-X65"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MgZ-aB-99l"/>
+                    <navigationItem key="navigationItem" title="Title" id="YKM-wa-Ns8"/>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
                         <outlet property="backgroundImageView" destination="Vzn-Xk-inU" id="eCG-N5-q4y"/>
@@ -1128,7 +1128,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YzV-sN-NiF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="Tab Bar/home" selectedImage="Tab Bar/home-active" id="ohb-EB-kZN"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xR6-ie-WdK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="xR6-ie-WdK">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

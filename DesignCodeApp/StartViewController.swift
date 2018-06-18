@@ -55,12 +55,14 @@ class StartViewController: UIViewController {
 
         addBlurStatusBar()
         setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
+        
+        navigationItem.title = "I have a new title"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        isStatusBarHidden = false
+       isStatusBarHidden = false
         UIView.animate(withDuration: 0.5, animations: {
             self.setNeedsStatusBarAppearanceUpdate()
         })
