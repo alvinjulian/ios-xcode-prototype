@@ -13,7 +13,7 @@
         <!--Title-->
         <scene sceneID="Kp6-vg-oUJ">
             <objects>
-                <viewController id="Wf3-Lt-VJP" customClass="StartViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wf3-Lt-VJP" customClass="HomeViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mnB-Tc-OOH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1951"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

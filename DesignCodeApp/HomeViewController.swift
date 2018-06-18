@@ -9,7 +9,7 @@
 import UIKit
 import AVKit
 
-class StartViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var deviceImageView: UIImageView!
@@ -113,7 +113,7 @@ class StartViewController: UIViewController {
 
 }
 
-extension StartViewController: UIScrollViewDelegate {
+extension HomeViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
         
@@ -164,7 +164,7 @@ extension StartViewController: UIScrollViewDelegate {
     }
 }
 
-extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sections.count
     }
