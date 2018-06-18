@@ -655,14 +655,25 @@
                     <view key="view" contentMode="scaleToFill" id="3Ym-PZ-Oce">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQh-nF-icP">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FQh-nF-icP" firstAttribute="leading" secondItem="Fxm-RP-fcF" secondAttribute="leading" id="0G1-nX-AUk"/>
+                            <constraint firstItem="Fxm-RP-fcF" firstAttribute="trailing" secondItem="FQh-nF-icP" secondAttribute="trailing" id="IEV-gC-wu5"/>
+                            <constraint firstItem="Fxm-RP-fcF" firstAttribute="bottom" secondItem="FQh-nF-icP" secondAttribute="bottom" id="x0Y-rs-Qw7"/>
+                            <constraint firstItem="FQh-nF-icP" firstAttribute="top" secondItem="Fxm-RP-fcF" secondAttribute="top" id="z8j-9q-znh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fxm-RP-fcF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chapters" image="Tab Bar/chapters" selectedImage="Tab Bar/chapters-active" id="ecw-i6-gOa"/>
+                    <navigationItem key="navigationItem" title="Chapters" id="bN1-Zk-K52"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQx-Ky-6g5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6127.1999999999998" y="-573.46326836581716"/>
+            <point key="canvasLocation" x="6127" y="214"/>
         </scene>
         <!--Bookmarks-->
         <scene sceneID="OFa-su-Db3">
@@ -691,7 +702,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PwF-hg-wu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6895.1999999999998" y="-573.46326836581716"/>
+            <point key="canvasLocation" x="6930" y="-573"/>
         </scene>
         <!--Exercises-->
         <scene sceneID="b35-g0-Sgk">
@@ -720,7 +731,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMg-2G-9ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7671.1999999999998" y="-574.36281859070471"/>
+            <point key="canvasLocation" x="7706" y="-573"/>
         </scene>
         <!--More-->
         <scene sceneID="qB0-bf-zlP">
@@ -919,7 +930,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWB-jM-R84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8442.3999999999996" y="-574.81259370314842"/>
+            <point key="canvasLocation" x="8478" y="-574"/>
         </scene>
         <!--Testimonial View Controller-->
         <scene sceneID="J0x-dz-4qD">
@@ -1139,7 +1150,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="YzV-sN-NiF" kind="relationship" relationship="viewControllers" id="bxF-YT-zCq"/>
-                        <segue destination="Xqv-Sy-pPP" kind="relationship" relationship="viewControllers" id="mch-87-QEx"/>
+                        <segue destination="nmM-kI-Gm9" kind="relationship" relationship="viewControllers" id="mch-87-QEx"/>
                         <segue destination="WFE-EU-jDU" kind="relationship" relationship="viewControllers" id="hhS-CP-2XH"/>
                         <segue destination="vG8-OF-rX2" kind="relationship" relationship="viewControllers" id="KEA-Xl-K2S"/>
                         <segue destination="kKM-pN-sFA" kind="relationship" relationship="viewControllers" id="sgL-eF-E0z"/>
@@ -1167,6 +1178,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ehz-2c-LRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3785" y="-573"/>
+        </scene>
+        <!--Chapters-->
+        <scene sceneID="cyt-23-J3O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nmM-kI-Gm9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chapters" image="Tab Bar/chapters" selectedImage="Tab Bar/chapters-active" id="ecw-i6-gOa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="l4Q-LI-9AD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xqv-Sy-pPP" kind="relationship" relationship="rootViewController" id="aGc-jH-ucY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRE-Mx-cAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6127.1999999999998" y="-573.46326836581716"/>
         </scene>
     </scenes>
     <resources>
