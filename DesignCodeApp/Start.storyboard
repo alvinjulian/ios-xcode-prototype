@@ -651,7 +651,7 @@
         <!--Chapters-->
         <scene sceneID="qOh-bl-Qhg">
             <objects>
-                <viewController id="Xqv-Sy-pPP" sceneMemberID="viewController">
+                <viewController id="Xqv-Sy-pPP" customClass="ChaptersViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ym-PZ-Oce">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -803,6 +803,9 @@
                         <viewLayoutGuide key="safeArea" id="Fxm-RP-fcF"/>
                     </view>
                     <navigationItem key="navigationItem" title="Chapters" id="bN1-Zk-K52"/>
+                    <connections>
+                        <outlet property="chapter1CollectionView" destination="Ugl-ZK-6zG" id="N1k-7H-vIb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQx-Ky-6g5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

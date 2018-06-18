@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC155AE420A575350096C4FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC155AE320A575350096C4FC /* HomeViewController.swift */; };
+		FC3319A920D78C8300498745 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3319A820D78C8300498745 /* ChaptersViewController.swift */; };
 		FC4462CC20ACBFE100815C58 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4462CB20ACBFE100815C58 /* Data.swift */; };
 		FC4462CE20ACC09100815C58 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4462CD20ACC09100815C58 /* SectionCollectionViewCell.swift */; };
 		FC4462D020AD190700815C58 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4462CF20AD190700815C58 /* TestimonialViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		FC155AE320A575350096C4FC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FC3319A820D78C8300498745 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 		FC4462CB20ACBFE100815C58 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		FC4462CD20ACC09100815C58 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC4462CF20AD190700815C58 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				FC7568D320A2EFCE00CD18FC /* DesignCodeApp.xcdatamodeld */,
 				FC9F251920A56A0B00693CA2 /* Start.storyboard */,
 				FC155AE320A575350096C4FC /* HomeViewController.swift */,
+				FC3319A820D78C8300498745 /* ChaptersViewController.swift */,
 				FC4462CF20AD190700815C58 /* TestimonialViewController.swift */,
 				FC4462D320AD2E5000815C58 /* SectionViewController.swift */,
 				FC4462D120AD194000815C58 /* TestimonialCollectionViewCell.swift */,
@@ -168,6 +171,7 @@
 				FC4462D020AD190700815C58 /* TestimonialViewController.swift in Sources */,
 				FC7568CD20A2EFCE00CD18FC /* AppDelegate.swift in Sources */,
 				FC4462D220AD194000815C58 /* TestimonialCollectionViewCell.swift in Sources */,
+				FC3319A920D78C8300498745 /* ChaptersViewController.swift in Sources */,
 				FC7568D520A2EFCE00CD18FC /* DesignCodeApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
