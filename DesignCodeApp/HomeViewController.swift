@@ -54,9 +54,9 @@ class HomeViewController: UIViewController {
         }
 
         addBlurStatusBar()
-        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
+//        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
         
-        navigationItem.title = "I have a new title"
+//        navigationItem.title = "I have a new title"
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
