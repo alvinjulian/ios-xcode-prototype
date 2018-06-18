@@ -31,3 +31,6 @@ Perhatikan sisi kiri layar, tidak mengenai notch dari iPhone X, karena sudah men
 
 ## Preview aplikasi dengan Tab Bar Controller
 <img src="https://github.com/omrobbie/ios-xcode-prototype/blob/master/screenshot/preview13.png" width="256"/>&nbsp;
+
+## Preview aplikasi dengan Navigation Controller
+<img src="https://github.com/omrobbie/ios-xcode-prototype/blob/master/screenshot/preview14.gif" width="256"/>&nbsp;
