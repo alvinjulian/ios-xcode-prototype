@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -814,19 +815,91 @@
         <!--Bookmarks-->
         <scene sceneID="OFa-su-Db3">
             <objects>
-                <tableViewController id="vG8-OF-rX2" sceneMemberID="viewController">
+                <tableViewController id="vG8-OF-rX2" customClass="BookmarksTableViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TEW-mh-eSd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SRc-cy-y8J">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookmarkCell" rowHeight="125" id="SRc-cy-y8J" customClass="BookmarkTableViewCell" customModule="DesignCodeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SRc-cy-y8J" id="JUs-xJ-dIT">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bookmarks/code" translatesAutoresizingMaskIntoConstraints="NO" id="1LN-bf-47l">
+                                            <rect key="frame" x="16" y="20" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="WUw-pn-kf2"/>
+                                                <constraint firstAttribute="height" constant="44" id="tg9-6q-gaZ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfL-gj-Bju">
+                                            <rect key="frame" x="42" y="20" width="18" height="18"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2v-dl-yzG">
+                                                    <rect key="frame" x="5.5" y="0.0" width="7.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="F2v-dl-yzG" firstAttribute="centerY" secondItem="qfL-gj-Bju" secondAttribute="centerY" id="1MD-sp-3lg"/>
+                                                <constraint firstAttribute="height" constant="18" id="hn4-BJ-WOh"/>
+                                                <constraint firstAttribute="width" constant="18" id="vZA-z6-w1J"/>
+                                                <constraint firstItem="F2v-dl-yzG" firstAttribute="centerX" secondItem="qfL-gj-Bju" secondAttribute="centerX" id="xcd-sc-peh"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="9"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7tC-JG-1y2">
+                                            <rect key="frame" x="68" y="31" width="307" height="65"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWN-QS-lcT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="307" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9u-Wx-JkM">
+                                                    <rect key="frame" x="0.0" y="18" width="307" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI5-Oe-HRx">
+                                                    <rect key="frame" x="0.0" y="42" width="307" height="23"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1LN-bf-47l" firstAttribute="top" secondItem="JUs-xJ-dIT" secondAttribute="topMargin" constant="9" id="04p-80-I80"/>
+                                        <constraint firstItem="qfL-gj-Bju" firstAttribute="trailing" secondItem="1LN-bf-47l" secondAttribute="trailing" id="4Jr-tE-cu0"/>
+                                        <constraint firstItem="qfL-gj-Bju" firstAttribute="top" secondItem="1LN-bf-47l" secondAttribute="top" id="6QW-qa-UR5"/>
+                                        <constraint firstItem="7tC-JG-1y2" firstAttribute="leading" secondItem="1LN-bf-47l" secondAttribute="trailing" constant="8" id="CFz-VC-TTQ"/>
+                                        <constraint firstItem="7tC-JG-1y2" firstAttribute="trailing" secondItem="JUs-xJ-dIT" secondAttribute="trailingMargin" constant="16" id="go4-HY-fvm"/>
+                                        <constraint firstItem="7tC-JG-1y2" firstAttribute="top" secondItem="JUs-xJ-dIT" secondAttribute="topMargin" constant="20" id="r9r-93-nL0"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7tC-JG-1y2" secondAttribute="bottom" constant="18" id="tBC-2E-tE1"/>
+                                        <constraint firstItem="1LN-bf-47l" firstAttribute="leading" secondItem="JUs-xJ-dIT" secondAttribute="leadingMargin" id="tcz-hQ-p2I"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="70" minY="0.0" maxX="16" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="badgeImageView" destination="1LN-bf-47l" id="Pug-zf-Vzh"/>
+                                    <outlet property="bodyLabel" destination="pI5-Oe-HRx" id="rhm-rd-fKp"/>
+                                    <outlet property="chapterNumberLabel" destination="F2v-dl-yzG" id="Bvc-jl-NfN"/>
+                                    <outlet property="chapterTitleLabel" destination="cWN-QS-lcT" id="zgT-FH-yst"/>
+                                    <outlet property="titleLabel" destination="H9u-Wx-JkM" id="AfC-xC-zax"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1359,6 +1432,7 @@
         <image name="Action-Play-Small" width="23" height="35"/>
         <image name="Art-Book" width="133" height="150"/>
         <image name="Art-iPhoneX" width="129" height="326"/>
+        <image name="Bookmarks/code" width="44" height="44"/>
         <image name="Home" width="2880" height="1600"/>
         <image name="Logo-Apple" width="36" height="44"/>
         <image name="Logo-DesignCode" width="28" height="28"/>
