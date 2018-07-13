@@ -88,8 +88,6 @@
 				FC7568DB20A2EFCF00CD18FC /* Info.plist */,
 				FC7568D320A2EFCE00CD18FC /* DesignCodeApp.xcdatamodeld */,
 				FC9F251920A56A0B00693CA2 /* Start.storyboard */,
-				FC154BC720F8B80900713D02 /* MoreViewController.swift */,
-				FC154BC520F8B4DC00713D02 /* WebViewController.swift */,
 				FC155AE320A575350096C4FC /* HomeViewController.swift */,
 				FC3319A820D78C8300498745 /* ChaptersViewController.swift */,
 				FC4462CF20AD190700815C58 /* TestimonialViewController.swift */,
@@ -98,6 +96,8 @@
 				FC4462CD20ACC09100815C58 /* SectionCollectionViewCell.swift */,
 				FC154BC120F89BED00713D02 /* BookmarksTableViewController.swift */,
 				FC154BC320F8A8AE00713D02 /* BookmarkTableViewCell.swift */,
+				FC154BC720F8B80900713D02 /* MoreViewController.swift */,
+				FC154BC520F8B4DC00713D02 /* WebViewController.swift */,
 				FC4462CB20ACBFE100815C58 /* Data.swift */,
 			);
 			path = DesignCodeApp;
