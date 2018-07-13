@@ -945,7 +945,7 @@
         <!--More-->
         <scene sceneID="qB0-bf-zlP">
             <objects>
-                <viewController id="kKM-pN-sFA" sceneMemberID="viewController">
+                <viewController id="kKM-pN-sFA" customClass="MoreViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n5W-8u-5OT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="751"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1023,6 +1023,9 @@
                                                                 <state key="normal" title="Read on Safari" image="More/safari">
                                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="safariButtonTapped:" destination="kKM-pN-sFA" eventType="touchUpInside" id="cFx-Je-jQK"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9n-7w-wnH">
                                                                 <rect key="frame" x="0.0" y="180.5" width="335" height="59"/>
@@ -1033,6 +1036,9 @@
                                                                 <state key="normal" title="Community" image="More/community">
                                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="communityButtonTapped:" destination="kKM-pN-sFA" eventType="touchUpInside" id="GMb-Bf-Jyk"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzH-Nr-EoG">
                                                                 <rect key="frame" x="0.0" y="240.5" width="335" height="59.5"/>
@@ -1077,6 +1083,9 @@
                                                         <state key="normal" title="@MengTo" image="More/twitter">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="twitterHandleTapped:" destination="kKM-pN-sFA" eventType="touchUpInside" id="3YQ-0k-Nhd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
